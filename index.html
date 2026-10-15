@@ -1180,7 +1180,8 @@
 
       // 가게 이름
       const name = document.createElement("strong");
-      name.textContent = "☕ " + place.place_name;
+      name.textContent =
+  (activeTab === "study" ? "📚 " : "☕ ") + place.place_name;
       name.style.fontSize = "14px";
 
       // 주소
